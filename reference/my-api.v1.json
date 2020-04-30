@@ -5,14 +5,66 @@
     "version": "1.0",
     "license": {
       "name": "MIT"
-    }
+    },
+    "description": ""
   },
   "servers": [
     {
       "url": "http://localhost:3000"
     }
   ],
-  "paths": {},
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Your GET endpoint",
+        "tags": [],
+        "responses": {},
+        "operationId": "get-person",
+        "description": "Returns all active user objects"
+      },
+      "parameters": [],
+      "post": {
+        "summary": "",
+        "operationId": "post-users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Add a user"
+      },
+      "put": {
+        "summary": "",
+        "operationId": "put-users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Update a user"
+      },
+      "patch": {
+        "summary": "",
+        "operationId": "patch-users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Updates an existing user.  Only updates the fields that are passed in as parameters."
+      },
+      "delete": {
+        "summary": "",
+        "operationId": "delete-users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Delete an existing user"
+      }
+    }
+  },
   "components": {
     "securitySchemes": {}
   }
